@@ -1,13 +1,8 @@
-import React, { SyntheticEvent, useState } from 'react'
+import { SyntheticEvent, useState } from 'react';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
 import { Autocomplete, Box, Divider, TextField } from '@mui/material';
 import {  LLMType, ModelDataFromObj, ModelDataObj, ModelStatus, ModelType } from '../constants/types';
 
@@ -31,11 +26,11 @@ const CreateNewModal = ({open,handleClose,handleSubmit}:CreateNewModalProps) => 
         setData((prev)=>{ return {...prev,[key]:value}})
     }
 
-    const handleSelectLLM = (event:SyntheticEvent,value:string) =>{
+    const handleSelectLLM = (_:SyntheticEvent,value:string) =>{
         handleChange("llm",value as LLMType)
     }
 
-    const handleSelectModelType = (event:SyntheticEvent,value:string) =>{
+    const handleSelectModelType = (_:SyntheticEvent,value:string) =>{
         handleChange("modelType",value as ModelType)
     }
 

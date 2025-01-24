@@ -1,5 +1,4 @@
-import { Avatar, IconButton, Typography,MenuIcon } from '@mui/material'
-import React from 'react'
+import { Avatar, IconButton, Typography } from '@mui/material';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import SearchInput from './SearchInput'
 

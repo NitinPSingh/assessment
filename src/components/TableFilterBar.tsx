@@ -1,4 +1,3 @@
-import React from 'react'
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import TuneOutlinedIcon from '@mui/icons-material/TuneOutlined';
 import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';

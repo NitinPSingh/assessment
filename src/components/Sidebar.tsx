@@ -1,4 +1,3 @@
-import React from 'react'
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import LayersOutlinedIcon from '@mui/icons-material/LayersOutlined';
 import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';

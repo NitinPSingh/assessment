@@ -1,11 +1,7 @@
-import React from 'react'
 import SwapVertOutlinedIcon from '@mui/icons-material/SwapVertOutlined';
-import SouthOutlinedIcon from '@mui/icons-material/SouthOutlined';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
-import NorthOutlinedIcon from '@mui/icons-material/NorthOutlined';
 import { ModelDataObj } from '../constants/types';
-import { IconButton } from '@mui/material';
 
 interface TableHeadCellProps {
     sortConfig?:{ key: keyof ModelDataObj; direction: 'asc' | 'desc' } | null,

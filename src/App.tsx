@@ -10,8 +10,8 @@ import Sidebar from './components/Sidebar';
 import { IconButton } from '@mui/material';
 import ModelLibrary from './page/ModelLibrary';
 import CustomToolBar from './components/CustomToolBar';
-// import InboxIcon from '@mui/icons-material/MoveToInbox';
-// import MailIcon from '@mui/icons-material/Mail';
+
+
 
 const drawerWidth = 240;
 
@@ -19,14 +19,12 @@ export default function App() {
 
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [isClosing, setIsClosing] = React.useState(false);
-  const [isSearchOpen, setIsSearchOpen] = React.useState(false);
 
-  // Handle Ctrl+K / Cmd+K shortcut
+  
   React.useEffect(() => {
     const handleKeyDown = (event:KeyboardEvent) => {
       if ((event.ctrlKey || event.metaKey) && event.key === 'k') {
         event.preventDefault(); 
-        setIsSearchOpen(true); 
       }
     };
 
@@ -83,7 +81,6 @@ export default function App() {
         sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
         aria-label="mailbox folders"
       >
-        {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Drawer
           container={container}
           variant="temporary"
@@ -91,7 +88,7 @@ export default function App() {
           onTransitionEnd={handleDrawerTransitionEnd}
           onClose={handleDrawerClose}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true, 
           }}
           sx={{
             display: { xs: 'block', sm: 'none' },
@@ -118,9 +115,9 @@ export default function App() {
             flexGrow: 1,
             p: 2,
             width: { sm: `calc(100vw - ${drawerWidth}px)` },
-            mt: 8, // Offset for the AppBar height
-            height: 'calc(100vh - 64px)', // Adjust height to account for the AppBar
-            overflow: 'auto', // Add scroll if content overflows
+            mt: 8, 
+            height: 'calc(100vh - 64px)', 
+            overflow: 'auto', 
           }}
         >
          <ModelLibrary />

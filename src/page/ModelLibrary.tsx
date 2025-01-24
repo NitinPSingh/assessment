@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import DataTableView from '../components/DataTableView';
 import { ModelDataObj } from '../constants/types';
 import CreateNewModal from '../components/CreateNewModal';
