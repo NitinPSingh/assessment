@@ -130,7 +130,7 @@ export default function DataTableView({modelData}:DataTableViewProp) {
       </TableRow>
     </TableHead>
             <TableBody>
-              {sortedData.slice(currPage*itemCountPerPage,currPage*itemCountPerPage + itemCountPerPage).map((data, index) => 
+              {sortedData.slice(currPage*itemCountPerPage,currPage*itemCountPerPage + itemCountPerPage).map((data) => 
                   <TableRow
                     hover
                 
